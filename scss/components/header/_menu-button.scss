@@ -1,0 +1,27 @@
+.header__menu-btn{
+    display:block;
+    width:40px;
+    height:40px;
+    padding:0;
+    z-index: 15;
+    
+    align-self: center;
+
+    background-color: transparent;
+    border:0;
+    & .menu-icon__close{
+        display:none;
+    }
+    &.is-open .menu-icon__open{
+    display:none;
+    }
+    &.is-open .menu-icon__close{
+        display:block;
+    }
+}
+.menu-icon{
+    .header__menu-btn:hover &,
+    .header__menu-btn:focus &{
+        fill:var(--accent-color);
+    }
+}

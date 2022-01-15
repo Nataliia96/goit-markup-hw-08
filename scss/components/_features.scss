@@ -1,0 +1,33 @@
+.features__icons-wrapper {
+    height:120px;
+    margin-bottom: 30px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: var(--background-color);
+}
+.features__icon {
+    max-width: 70px;
+    max-height: 70px;
+}
+  
+.features__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.features__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom:10px;
+}
+.features__description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top:0;
+}

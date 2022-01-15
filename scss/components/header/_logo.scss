@@ -1,0 +1,9 @@
+// Лого
+.logo__accent--header{
+  @extend %logo;
+  color: var(--accent-color);
+}
+.logo--header{
+  @extend %logo;
+  color: var(--title-text-color);
+}
