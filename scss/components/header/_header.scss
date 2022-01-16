@@ -11,12 +11,9 @@
     border-bottom-style: solid;
     border-bottom-color: rgba(236, 236, 236, 1);    
 }
-.header {
-    height: 60px;
-}
 .header__mobile-flex{
     display: flex;
+    height:60px;
     align-items: center;
     justify-content: space-between;
-    height:100%;
 }
