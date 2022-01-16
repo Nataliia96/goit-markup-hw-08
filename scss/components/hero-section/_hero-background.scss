@@ -1,4 +1,3 @@
-//  герой
 .hero-content {
   max-width: 480px;
   height: auto;
@@ -16,4 +15,16 @@
       background-size: cover;
   
   text-align: center;
+
+  @media screen and (min-width:768px){
+    background-image: linear-gradient(
+       rgba(47, 48, 58, 0.4) 100%,
+       rgba(47, 48, 58, 1)
+     ),
+      url(../images/background.jpg);
+      background-size: cover;
+
+      width: 768px;
+      background-size: cover;
+  }
 }
