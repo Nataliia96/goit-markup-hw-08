@@ -1,9 +1,9 @@
 .filter-list {
-    margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
+    justify-content: flex-start;  
     flex-wrap: wrap;
-    justify-content: flex-start;
+    align-content: space-between;
 }
   .filter-list__button {
     padding: 6px 22px;
@@ -31,7 +31,13 @@
           0px 2px 2px rgba(0, 0, 0, 0.12);
       }
 }
-  .filter-list__item:not(:last-child) {
+  .filter-list__item {
+     &:not(:last-child) {
     margin-right: 8px;
+  }
+   &:nth-child(-n + 3){
+     margin-bottom: 15px;
+   }
 }
+
   

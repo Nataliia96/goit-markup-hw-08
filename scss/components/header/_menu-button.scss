@@ -1,3 +1,4 @@
+// моб меню
 .header__menu-btn{
     display:block;
     max-width:40px;
@@ -17,6 +18,7 @@
     &.is-open .menu-icon__open{
     display:none;
     }
+
 }
 .menu-icon{
     .header__menu-btn:hover &,

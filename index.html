@@ -14,17 +14,16 @@
 </head>
 <body>
  <header class="header-section">
-     <div class="container">
-      <div class="header__mobile-flex">
-            <a href="./index.html" class="logo--header"><span class="logo__accent--header">Web</span>Studio</a>
-            <button type="button" class="header__menu-btn" data-menu-button>
-               <svg class="menu-icon" width="40px" height="40px">
-                   <use class="menu-icon__open" href="./images/icons.svg#icon-menu"></use>
-                   <use class="menu-icon__close" href="./images/icons.svg#icon-close"></use>
-               </svg>
-           </button>
-     </div>   
-     <div class="header__menu-box" data-menu> 
+     <div class="container header-flex">
+        <a href="./index.html" class="logo--header"><span class="logo__accent--header">Web</span>Studio</a>
+        <button type="button" class="header__menu-btn" data-menu-button aria-expanded="false"
+        aria-controls="header__menu-box">
+            <svg class="menu-icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                <use class="menu-icon__open" href="./images/icons.svg#icon-menu"></use>
+                <use class="menu-icon__close" href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+     <nav class="header__menu-box" data-menu id="header__menu-box"> 
      <ul class="site-nav" >
          <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
          <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
@@ -41,13 +40,13 @@
            </svg>
            +38 096 111 11 11</a></li>
     </ul>
-    <ul class="header__socials">
-        <li><a href="" aria-label="Instagram">Instagram</a></li>
-        <li><a href="" aria-label="Twitter">Twitter</a></li>
-        <li><a href="" aria-label="Facebook">Facebook</a></li>
-        <li><a href="" aria-label="LinkedIn">LinkedIn</a></li>
+    <ul class="menu-socials">
+        <li class="menu-socials__item"><a class="menu-socials__link" href="" aria-label="Instagram">Instagram</a></li>
+        <li class="menu-socials__item"><a class="menu-socials__link" href="" aria-label="Twitter">Twitter</a></li>
+        <li class="menu-socials__item"><a class="menu-socials__link" href="" aria-label="Facebook">Facebook</a></li>
+        <li class="menu-socials__item"><a class="menu-socials__link" href="" aria-label="LinkedIn">LinkedIn</a></li>
     </ul>
-    </div>
+    </nav>
      
     </div>
  </header>
