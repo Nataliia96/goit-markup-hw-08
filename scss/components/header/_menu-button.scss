@@ -1,4 +1,4 @@
-// моб меню
+
 .header__menu-btn{
     display:block;
     max-width:40px;
@@ -18,8 +18,12 @@
     &.is-open .menu-icon__open{
     display:none;
     }
-
+    
+  @media screen and (min-width:768px){
+    display:none;
 }
+}
+
 .menu-icon{
     .header__menu-btn:hover &,
     .header__menu-btn:focus &{
