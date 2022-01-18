@@ -458,8 +458,6 @@ img {
         flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
-    margin-top: 0;
-    margin-left: 0;
   }
 }
 .features__icons-wrapper {
@@ -477,10 +475,11 @@ img {
   background-color: var(--background-color);
 }
 
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 480px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
-
 .features__title {
   margin-bottom: 10px;
   color: var(--title-text-color);
