@@ -1,9 +1,11 @@
 .filter-list {
+  @media screen and (max-width:767px){
     margin-bottom: 40px;
     display: flex;
     justify-content: flex-start;  
     flex-wrap: wrap;
     align-content: space-between;
+  }
 }
   .filter-list__button {
     padding: 6px 22px;
