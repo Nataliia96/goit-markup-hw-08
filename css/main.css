@@ -391,7 +391,6 @@ img {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(47, 48, 58, 0.4)), to(#2f303a)), url(../images/background-mob.jpg);
   background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4) 100%, #2f303a), url(../images/background-mob.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4) 100%, #2f303a), url(../images/background-mob.jpg);
-  background-size: cover;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -399,7 +398,6 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(47, 48, 58, 0.4)), to(#2f303a)), url(../images/background-tablet.jpg);
     background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4) 100%, #2f303a), url(../images/background-tablet.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 100%, #2f303a), url(../images/background-tablet.jpg);
-    background-size: cover;
   }
 }
 
