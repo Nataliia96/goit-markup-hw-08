@@ -1101,6 +1101,11 @@ address {
   -o-transition: opacity 250ms var(--transition-cubic);
   transition: opacity 250ms var(--transition-cubic);
 }
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding: 0;
+  }
+}
 
 .backdrop.is-hidden {
   opacity: 0;
@@ -1115,6 +1120,25 @@ address {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: -webkit-transform 250ms var(--transition-cubic);
+    transition: -webkit-transform 250ms var(--transition-cubic);
+    -o-transition: transform 250ms var(--transition-cubic);
+    transition: transform 250ms var(--transition-cubic);
+    transition: transform 250ms var(--transition-cubic), -webkit-transform 250ms var(--transition-cubic);
+  }
 }
 
 .modal__title {
