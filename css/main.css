@@ -335,8 +335,8 @@ img {
 .contacts__icon-phone {
     display: block;
     fill: currentColor;
-    width: 14px;
-    height: 10px;
+    width: 10px;
+    height: 14px;
   }
 }
 
