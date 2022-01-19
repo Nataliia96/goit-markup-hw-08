@@ -2,15 +2,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-bg-color);
-    @media screen and (min-width:768px){
-
-      
-    }
   }
 
   @media screen and (min-width:768px) {
-    .footer-tablet-flex{
+    .footer-flex{
      display: flex;
+     flex-wrap: wrap;
      justify-content: space-around;
     }
 }
+
