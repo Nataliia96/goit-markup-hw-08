@@ -282,16 +282,28 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .contacts__icon-mail,
+.contacts__icon-phone {
+    display: none;
+    display: block;
+    fill: currentColor;
+  }
+}
+@media screen and (min-width: 768px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
 
   .contacts__icon-mail {
     margin-right: 8px;
+    width: 14px;
+    height: 10px;
   }
 
   .contacts__icon-phone {
     margin-right: 10px;
+    width: 10px;
+    height: 14px;
   }
 }
 .contacts__link {
@@ -326,20 +338,6 @@ img {
     font-size: 34px;
   }
 }
-.contacts__icon-mail,
-.contacts__icon-phone {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .contacts__icon-mail,
-.contacts__icon-phone {
-    display: block;
-    fill: currentColor;
-    width: 10px;
-    height: 14px;
-  }
-}
-
 .menu-socials {
   display: -webkit-box;
   display: -ms-flexbox;
