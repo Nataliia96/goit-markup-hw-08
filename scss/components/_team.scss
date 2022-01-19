@@ -3,6 +3,13 @@
 }
 .team-members {
     margin: 0;
+    @media screen and (min-width:768px) {
+      display:flex;
+      flex-wrap: wrap;
+      margin:0;
+      margin-right: -30px;
+      margin-bottom: -30px;
+    }
 }
 .team-members__item {
     background: var(--white);
@@ -11,9 +18,18 @@
     border-radius: 0px 0px 4px 4px;
   
     text-align: center;
+
+    @media screen  and (min-width:768px){
+      flex-basis: calc((100% - 60px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px ;
+    }
 }
+
+ @media screen and (max-width:767px){
 .team-members__item:not(:last-child){
   margin-bottom: 30px;
+ }
 }
 
 .team-members__content {
@@ -37,7 +53,7 @@
     letter-spacing: 0.03em;
 }
 .team-members-pic{
-    max-width:100%;
+    width:100%;
 }
  
 //  Наша команда + футер - иконки соцсетей 
