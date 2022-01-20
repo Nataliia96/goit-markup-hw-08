@@ -1273,6 +1273,20 @@ address {
   color: var(--white);
   font-weight: 700;
 }
+@media screen and (min-width: 1200px) {
+  .form-subscription__email:not(:-moz-placeholder-shown) + .form-subscription__label {
+    transform: translateX(-70px);
+  }
+  .form-subscription__email:not(:-ms-input-placeholder) + .form-subscription__label {
+    -ms-transform: translateX(-70px);
+        transform: translateX(-70px);
+  }
+  .form-subscription__email:focus + .form-subscription__label, .form-subscription__email:not(:placeholder-shown) + .form-subscription__label {
+    -webkit-transform: translateX(-70px);
+        -ms-transform: translateX(-70px);
+            transform: translateX(-70px);
+  }
+}
 
 .form-subscription__email {
   display: block;

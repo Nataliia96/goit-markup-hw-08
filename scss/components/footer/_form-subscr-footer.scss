@@ -41,7 +41,14 @@
       color: var(--white);
       font-weight: 700;
     }
+
+  @media screen and (min-width:1200px) {
+      .form-subscription__email:focus + &,
+      .form-subscription__email:not(:placeholder-shown) + & {
+      transform: translateX(-70px);
+    }
   }
+}
 
 .form-subscription__email {
   display: block;
