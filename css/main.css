@@ -1404,6 +1404,11 @@ address {
   letter-spacing: 0.03em;
   color: #140909;
 }
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
+}
 
 .form-item__label,
 .form-comment__label,
@@ -1519,7 +1524,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .form-checkbox__mark {
-    top: 4px;
     left: 12px;
   }
 }
@@ -1529,6 +1533,11 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-checkbox__text {
+    font-size: 14px;
+  }
 }
 
 .terms-link {
@@ -1547,7 +1556,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .form-checkbox__input {
-    top: 4px;
     left: 12px;
   }
 }
@@ -1563,7 +1571,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .form-checkbox__mark-wrapper {
-    top: 4px;
     left: 12px;
   }
 }
