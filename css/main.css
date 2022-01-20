@@ -1135,9 +1135,7 @@ address {
   margin: 0;
 }
 
-.footer-contacts__point {
-  display: inline-block;
-  margin-top: 8px;
+.footer-contacts__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -1149,8 +1147,12 @@ address {
   -o-transition: color 250ms var(--transition-cubic);
   transition: color 250ms var(--transition-cubic);
 }
-.footer-contacts__point:hover, .footer-contacts__point:focus {
+.footer-contacts__link:hover, .footer-contacts__link:focus {
   color: var(--accent-color);
+}
+
+.footer-contacts__point {
+  margin-top: 8px;
 }
 
 .footer-contacts-wrapper {
