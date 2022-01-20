@@ -3,28 +3,28 @@
 margin-bottom:30px;
  }
 }
+.portfolio-list {
+  @media screen and (min-width:768px){
+      display: flex;
+      flex-wrap: wrap;
+    
+      margin-left: calc(-1 * var(--portfolio-card-margin));
+      margin-top: calc(-1 * var(--portfolio-card-margin));
+      margin-bottom: 0;
+    }
+  }
 .portfolio-list__item{
   @media screen and (min-width:768px) {
     flex-basis: calc(100% / 2 - var(--portfolio-card-margin));
     margin-top: var(--portfolio-card-margin);
     margin-left: var(--portfolio-card-margin);
   }
-}
-
-.portfolio-list {
-@media screen and (min-width:768px){
-    display: flex;
-    flex-wrap: wrap;
-  
-    margin-left: calc(-1 * var(--portfolio-card-margin));
-    margin-top: calc(-1 * var(--portfolio-card-margin));
-    margin-bottom: 0;
-
-    margin-left: calc(-1 * var(--portfolio-card-margin));
-    margin-top: calc(-1 * var(--portfolio-card-margin));
-    margin-bottom: 0;
+  @media screen and (min-width:1200px) {
+    flex-basis: calc(100% / 3 - var(--portfolio-card-margin));
   }
 }
+
+
 .portfolio-link {
   text-decoration: none;
   display: block;

@@ -8,6 +8,9 @@
   text-transform: uppercase;
   color: var(--white);
   text-align: center;
+  @media screen and (min-width:1200px) {
+    text-align: start;
+  }
 }
 .footer-socials {
   display: flex;
@@ -39,4 +42,7 @@
 }
 .footer-socials-wrapper{
   margin-bottom:60px;
+  @media screen and (min-width:1200px) {
+    margin-bottom:0px;
+  }
 }
