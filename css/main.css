@@ -1539,6 +1539,7 @@ address {
 @media screen and (min-width: 1200px) {
   .form-checkbox__mark {
     left: 12px;
+    top: 2px;
   }
 }
 
@@ -1570,6 +1571,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .form-checkbox__input {
+    top: 2px;
     left: 12px;
   }
 }
@@ -1585,6 +1587,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .form-checkbox__mark-wrapper {
+    top: 2px;
     left: 12px;
   }
 }
