@@ -80,6 +80,11 @@ img {
 .section {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
 
 .projects-section__title,
 .team-section__title,
@@ -619,6 +624,7 @@ img {
 @media screen and (min-width: 1200px) {
   .projects-section {
     display: block;
+    padding-bottom: 94px;
   }
 
   .projects-list {
@@ -822,6 +828,7 @@ img {
         flex-basis: calc(( 100% - 90px) / 3);
     margin-left: 30px;
     margin-bottom: 30px;
+    height: 92px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1086,9 +1093,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1308,7 +1314,7 @@ address {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .form-subscription__email {
     width: 358px;
     margin-right: 12px;
