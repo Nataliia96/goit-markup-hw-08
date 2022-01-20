@@ -21,6 +21,12 @@
     opacity: 0;
     pointer-events: none;
 }
+
+.backdrop.is-hidden .modal {
+  @media screen and (min-width:1200px) {
+    transform: scale(3);
+  }
+}
   .modal {
     position: relative;
     padding: 40px;
@@ -37,13 +43,17 @@
       left: 50%;
       z-index: 5; 
   
-     width: 450px;
-     height: 609px;
-     padding: 40px;
+      width: 450px;
+      height: 609px;
+      padding: 40px;
 
-     transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%) scale(1);
 
-     transition: transform 250ms var(--transition-cubic);
+      transition: transform 250ms var(--transition-cubic);
+    }
+    @media screen and (min-width:1200px){
+      width: 528px;
+      height: 581px;
     }
 }
   .modal__title {
@@ -122,6 +132,9 @@
   
     padding-left: 24px;
     margin: 0 0 30px 0;
+    @media screen and (min-width:1200px) {
+      padding-left:35px;
+    }
 }
   .form-checkbox__mark {
     position: absolute;
@@ -133,6 +146,10 @@
   
     opacity: 0;
     pointer-events: none;
+    @media screen and (min-width:1200px) {
+    top: 4px;
+    left: 12px;
+    }
 }
   .form-checkbox__text {
     font-size: 12px;
@@ -153,6 +170,10 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    @media screen and (min-width:1200px) {
+      top: 4px;
+      left: 12px;
+      }
 }
   .form-checkbox__mark-wrapper {
     position: absolute;
@@ -162,6 +183,10 @@
     .form-checkbox__input:focus ~ & {
         fill: var(--accent-color);
       }
+    @media screen and (min-width:1200px) {
+        top: 4px;
+        left: 12px;
+        }
 }
   .form-checkbox__input:checked ~ .form-checkbox__mark {
     background-color: var(--accent-color);

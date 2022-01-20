@@ -1351,6 +1351,14 @@ address {
   pointer-events: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .backdrop.is-hidden .modal {
+    -webkit-transform: scale(3);
+        -ms-transform: scale(3);
+            transform: scale(3);
+  }
+}
+
 .modal {
   position: relative;
   padding: 40px;
@@ -1377,6 +1385,12 @@ address {
     -o-transition: transform 250ms var(--transition-cubic);
     transition: transform 250ms var(--transition-cubic);
     transition: transform 250ms var(--transition-cubic), -webkit-transform 250ms var(--transition-cubic);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1488,6 +1502,11 @@ address {
   padding-left: 24px;
   margin: 0 0 30px 0;
 }
+@media screen and (min-width: 1200px) {
+  .form-checkbox {
+    padding-left: 35px;
+  }
+}
 
 .form-checkbox__mark {
   position: absolute;
@@ -1497,6 +1516,12 @@ address {
   height: 15px;
   opacity: 0;
   pointer-events: none;
+}
+@media screen and (min-width: 1200px) {
+  .form-checkbox__mark {
+    top: 4px;
+    left: 12px;
+  }
 }
 
 .form-checkbox__text {
@@ -1520,6 +1545,12 @@ address {
   -moz-appearance: none;
   appearance: none;
 }
+@media screen and (min-width: 1200px) {
+  .form-checkbox__input {
+    top: 4px;
+    left: 12px;
+  }
+}
 
 .form-checkbox__mark-wrapper {
   position: absolute;
@@ -1529,6 +1560,12 @@ address {
 }
 .form-checkbox__input:focus ~ .form-checkbox__mark-wrapper {
   fill: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-checkbox__mark-wrapper {
+    top: 4px;
+    left: 12px;
+  }
 }
 
 .form-checkbox__input:checked ~ .form-checkbox__mark {
