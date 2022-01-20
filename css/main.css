@@ -21,6 +21,12 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+@media screen and (min-width: 1200px) {
+  .logo__accent--footer, .logo--footer, .logo--header, .logo__accent--header {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
 body {
   font-family: "Roboto", sans-serif;
