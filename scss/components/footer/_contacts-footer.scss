@@ -29,10 +29,11 @@ address {
 
 .footer-contacts__point{
     margin-top: 8px;
-    @media screen (min-width:1200px {
+    @media screen and (min-width:1200px) {
       margin-top: 9px;
     }
 }
+
 .footer-contacts-wrapper {
   text-align: center;
   margin-bottom:60px;
