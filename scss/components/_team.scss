@@ -64,10 +64,10 @@
     letter-spacing: 0.03em;
 }
 .team-members-pic{
-    width:100%;
+    max-width:100%;
 }
  
-//  Наша команда + футер - иконки соцсетей 
+//  Наша команда - иконки соцсетей 
   .socials {
     display: flex;
     justify-content: center;
