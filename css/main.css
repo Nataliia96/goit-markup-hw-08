@@ -1152,12 +1152,7 @@ address {
   letter-spacing: 0.03em;
 }
 
-.footer-contacts {
-  margin: 0;
-}
-
 .footer-contacts__link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
