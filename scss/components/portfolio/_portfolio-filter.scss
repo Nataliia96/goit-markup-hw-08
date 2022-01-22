@@ -7,10 +7,13 @@
     align-content: space-between;
   }
   @media screen and (min-width:768px){
-    margin-bottom:36px;
+    margin-bottom:30px;
     display: flex;
     justify-content: center;
   }
+  @media screen and (min-width:1200px){
+    margin-bottom: 50px;
+ }
 }
   .filter-list__button {
     padding: 6px 22px;
