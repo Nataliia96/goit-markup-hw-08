@@ -2,19 +2,19 @@
   position: fixed;
   top: 0;
   left: 0;
-  
+
   width: 100%;
   height: 100%;
   z-index: 4;
 
-  padding:93px 15px;
+  padding: 93px 15px;
   overflow-y: scroll;
 
   background-color: rgba(0, 0, 0, 0.2);
 
   transition: opacity 250ms var(--transition-cubic);
-  @media screen and (min-width:481px) {
-    padding:0;
+  @media screen and (min-width: 481px) {
+    padding: 0;
   }
 }
 .backdrop.is-hidden {
@@ -23,9 +23,9 @@
 }
 
 .backdrop.is-hidden .modal {
-@media screen and (min-width:481px) {
-  transform: scale(3);
-}
+  @media screen and (min-width: 481px) {
+    transform: scale(3);
+  }
 }
 .modal {
   position: relative;
@@ -37,11 +37,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media screen and (min-width:481px){
+  @media screen and (min-width: 481px) {
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 5; 
+    z-index: 5;
 
     width: 450px;
     height: 609px;
@@ -51,7 +51,7 @@
 
     transition: transform 250ms var(--transition-cubic);
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
   }
@@ -65,7 +65,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: rgb(20, 9, 9);
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     line-height: 1.15;
   }
 }
@@ -108,15 +108,15 @@
 
   transition: border 250ms var(--transition-cubic);
   &::placeholder {
-      font-size: 14px;
-      line-height: 1.1;
-      letter-spacing: 0.01em;
-      color: rgba(117, 117, 117, 0.5);
-    }
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
   .form-comment:focus-within & {
-      border: 1px solid var(--accent-color);
-      outline: none;
-   }
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
 }
 .form-item,
 .form-comment {
@@ -130,13 +130,13 @@
 .form-comment {
   margin: 0 0 20px 0;
 }
-.form-checkbox{
+.form-checkbox {
   position: relative;
 
   padding-left: 24px;
   margin: 0 0 30px 0;
-  @media screen and (min-width:1200px) {
-    padding-left:35px;
+  @media screen and (min-width: 1200px) {
+    padding-left: 35px;
   }
 }
 .form-checkbox__mark {
@@ -149,8 +149,8 @@
 
   opacity: 0;
   pointer-events: none;
-  @media screen and (min-width:1200px) {
-  left: 12px;
+  @media screen and (min-width: 1200px) {
+    left: 12px;
   }
 }
 .form-checkbox__text {
@@ -158,7 +158,7 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  @media screen and  (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
 }
@@ -175,9 +175,9 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     left: 12px;
-    }
+  }
 }
 .form-checkbox__mark-wrapper {
   position: absolute;
@@ -185,11 +185,11 @@
   left: 0px;
   pointer-events: none;
   .form-checkbox__input:focus ~ & {
-      fill: var(--accent-color);
-    }
-  @media screen and (min-width:1200px) {
-      left: 12px;
-      }
+    fill: var(--accent-color);
+  }
+  @media screen and (min-width: 1200px) {
+    left: 12px;
+  }
 }
 .form-checkbox__input:checked ~ .form-checkbox__mark {
   background-color: var(--accent-color);
@@ -207,10 +207,9 @@
 
   transition: fill 250ms var(--transition-cubic);
   .form-item:focus-within & {
-      fill: var(--accent-color);
-    }
+    fill: var(--accent-color);
+  }
 }
-
 
 .modal-confirmation-btn {
   width: 200px;

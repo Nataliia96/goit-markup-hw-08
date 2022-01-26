@@ -1,8 +1,8 @@
 // паддинги секций
 .section {
   padding: 60px 0;
-  @media  screen and (min-width:1200px) {
-  padding: 94px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
   }
 }
 
@@ -18,7 +18,7 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     margin-bottom: 50px;
   }

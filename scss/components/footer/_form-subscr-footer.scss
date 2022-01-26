@@ -1,7 +1,7 @@
 .form-subscription {
   position: relative;
-  @media screen and (min-width:1200px){
-      display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 .form-subscription-title {
@@ -15,7 +15,7 @@
   text-transform: uppercase;
   color: var(--white);
   text-align: center;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     text-align: start;
     line-height: 1.14;
   }
@@ -31,20 +31,20 @@
   color: rgba(255, 255, 255, 0.6);
   pointer-events: none;
 
-    transition: transform 200ms var(--transition-cubic),
+  transition: transform 200ms var(--transition-cubic),
     color 250ms var(--transition-cubic),
     font-weight 250ms var(--transition-cubic);
-    
+
+  .form-subscription__email:focus + &,
+  .form-subscription__email:not(:placeholder-shown) + & {
+    transform: translateY(-35px);
+    color: var(--white);
+    font-weight: 700;
+  }
+
+  @media screen and (min-width: 1200px) {
     .form-subscription__email:focus + &,
     .form-subscription__email:not(:placeholder-shown) + & {
-      transform: translateY(-35px);
-      color: var(--white);
-      font-weight: 700;
-    }
-
-  @media screen and (min-width:1200px) {
-      .form-subscription__email:focus + &,
-      .form-subscription__email:not(:placeholder-shown) + & {
       transform: translateX(-70px);
     }
   }
@@ -61,14 +61,14 @@
   border-radius: 4px;
   background-color: transparent;
   color: var(--white);
-  @media screen and (min-width:768px) {
-    width:450px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
-  @media screen and (min-width:1200px){
-  width: 358px;
-  margin-right: 12px;
-  margin-bottom: 0;
- }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .form-subscription-btn {
@@ -79,8 +79,8 @@
   width: 200px;
   height: 50px;
   padding: 10px 28px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
